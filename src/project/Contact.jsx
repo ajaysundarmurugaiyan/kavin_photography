@@ -34,18 +34,18 @@ const ContactPage = () => {
         </video>
 
         {/* Overlay with content */}
-        <div className="relative w-full h-full flex flex-col md:flex-row justify-center items-start p-4 md:p-10 bg-opacity-100">
+        <div className="relative w-full h-full flex flex-col md:flex-row justify-center items-center p-4 md:p-10 bg-opacity-100">
           {/* Left side with shop image */}
-          <div className="w-full md:w-1/2 p-4">
+          <div className="w-full md:w-1/2 p-4 flex justify-center items-center">
             <img
               src={img6}
               alt="Shop"
-              className="w-full h-auto rounded-lg shadow-md"
+              className="w-full h-full object-cover rounded-lg shadow-md"
             />
           </div>
 
           {/* Right side with Google Maps and contact info */}
-          <div className="w-full md:w-1/2 p-4 flex flex-col space-y-4">
+          <div className="w-full md:w-1/2 p-4 flex flex-col space-y-4 justify-center items-center">
             {/* Google Maps */}
             <div className="w-full h-64 md:h-96">
               <iframe
@@ -58,7 +58,7 @@ const ContactPage = () => {
             </div>
 
             {/* Contact Info */}
-            <div className="w-full p-4 text-white flex flex-col flex-wrap">
+            <div className="w-full p-4 text-black flex flex-col flex-wrap">
               <p className="text-black md:text-xl md:w-2/4 text-sm font-merriweather">
                 329/2, near SEZ IT Park, Saravanampatti, Coimbatore, Tamil Nadu
                 641035
