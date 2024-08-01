@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import { img6 } from "../assets/images";
 
 const ContactPage = () => {
   return (
@@ -37,7 +38,7 @@ const ContactPage = () => {
           {/* Left side with shop image */}
           <div className="w-full md:w-1/2 p-4">
             <img
-              src="https://example.com/shop-image.jpg"
+              src={img6}
               alt="Shop"
               className="w-full h-auto rounded-lg shadow-md"
             />
