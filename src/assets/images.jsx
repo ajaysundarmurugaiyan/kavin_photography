@@ -1,0 +1,5 @@
+export {default as img1} from './background.jpg'
+export {default as img2} from './background1.jpg'
+export {default as img3} from './about.webp'
+export {default as img4} from './services.png'
+export {default as img5} from './home.avif'
