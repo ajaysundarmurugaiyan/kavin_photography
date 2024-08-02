@@ -67,7 +67,7 @@ const Partners = () => {
           <img
             src="https://yt3.googleusercontent.com/ytc/AIdro_kd9EI_uwJk3kcPxT7V5v0KhZovyBwKeGRUzcSmRydP2g=s900-c-k-c0x00ffffff-no-rj"
             alt="img2"
-            className="w-48 h-48 mt-5 p-5"
+            className="w-48 h-48 mt-5 sm:mx-5"
           />
         <img
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVbn3gH6CZHMPbygS55YN2gVFYZWaJV-63Yg&s"

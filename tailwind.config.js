@@ -25,9 +25,14 @@ export default {
           '0%': { transform: 'translateX(0)' },
           '100%': { transform: 'translateX(-50%)' }
         },
+        fillColor: {
+          '0%': { color: 'transparent' },
+          '100%': { color: '#f97316' },
+        },
       },
       animation: {
         scroll: 'scroll 20s linear infinite',
+        fillColor: 'fillColor 0.1s forwards',
       },
       spacing: {
         '2.5': '0.625rem', 

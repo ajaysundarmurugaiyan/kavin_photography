@@ -1,14 +1,27 @@
-import React, { Fragment, useState, Link } from "react";
+import React, { Fragment, useState, useEffect } from "react";
 import { img4 } from "../assets/images";
 import WeddingPhotos from "./OurServices/WeddingPhotos";
 
 const Services1 = () => {
-  const [selectedItem, setSelectedItem] = useState(0);
+  const services = [
+    "Wedding Photography",
+    "Pre & Post Wedding",
+    "Baby Shoots",
+    "Maternity Shoots",
+    "Puberty Shoots",
+    "Corporate Shoots",
+  ];
 
-  const handleClick = (e, item) => {
-    e.preventDefault();
-    setSelectedItem(item);
-  };
+  const [highlightIndex, setHighlightIndex] = useState(0);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setHighlightIndex((prevIndex) => (prevIndex + 1) % services.length);
+    }, services[highlightIndex].length * 100 + 500);
+
+    return () => clearInterval(intervalId);
+  }, [highlightIndex]);
+
   return (
     <Fragment>
       <div className="pt-5">
@@ -32,47 +45,37 @@ const Services1 = () => {
         </div>
         <div className=" items-center w-full ">
           {/* content */}
-          <div className="text-white font-merriweather md:text-5xl text-xl flex justify-center sm:justify-start">
+          <div className="text-orange-500 font-merriweather md:text-5xl text-xl flex justify-center sm:justify-start">
             Our Services
           </div>
 
           <ul className="text-white mt-10 flex flex-col justify-center items-center sm:justify-start sm:items-start">
-            <div>
-              <li className="text-sm md:text-3xl font-merriweather px-10  md:mt-10 mt-5">
-                <a href="/" onClick={<WeddingPhotos />}>
-                  Wedding Photography
+            {services.map((service, serviceIndex) => (
+              <li
+                key={serviceIndex}
+                className="text-sm md:text-3xl font-merriweather px-10 md:mt-10 mt-5"
+              >
+                <a href="/" onClick={(e) => e.preventDefault()} className="flex">
+                  {service.split("").map((letter, letterIndex) => (
+                    <span
+                      key={letterIndex}
+                      className={`transition-colors ${
+                        highlightIndex === serviceIndex
+                          ? `inline-block animate-fillColor`
+                          : ""
+                      }`}
+                      style={{
+                        animationDelay: `${letterIndex * 100}ms`,
+                        color:
+                          highlightIndex === serviceIndex ? "#f97316" : "",
+                      }}
+                    >
+                      {letter}
+                    </span>
+                  ))}
                 </a>
               </li>
-            </div>
-
-            <div className="text-sm md:text-3xl font-merriweather px-10 md:mt-10 mt-5">
-              <li>
-                <a href="/">Pre & Post Wedding</a>
-              </li>
-            </div>
-
-            <div className=" text-sm md:text-3xl font-merriweather px-10 md:mt-10 mt-5">
-              <li>
-                <a href="/">Baby Shoots</a>
-              </li>
-            </div>
-            <div className=" text-sm md:text-3xl font-merriweather px-10 md:mt-10 mt-5">
-              <li>
-                <a href="/"> Maternity Shoots</a>
-              </li>
-            </div>
-
-            <div className=" text-sm md:text-3xl font-merriweather px-10 md:mt-10 mt-5">
-              <li>
-                <a href="/"> Puberty Shoots</a>
-              </li>
-            </div>
-
-            <div className=" text-sm md:text-3xl font-merriweather px-10 md:mt-10 mt-5">
-              <li>
-                <a href="/">Corporate Shoots</a>
-              </li>
-            </div>
+            ))}
           </ul>
         </div>
       </div>

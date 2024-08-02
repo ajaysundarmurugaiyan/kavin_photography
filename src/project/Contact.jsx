@@ -20,23 +20,11 @@ const ContactPage = () => {
       </div>
 
       <div className="relative w-full h-screen overflow-hidden">
-        <video
-          autoPlay
-          loop
-          muted
-          className="absolute top-0 left-0 w-full h-full object-cover"
-        >
-          <source
-            src="https://example.com/recording-screen.mp4"
-            type="video/mp4"
-          />
-          Your browser does not support the video tag.
-        </video>
 
         {/* Overlay with content */}
         <div className="relative w-full h-full flex flex-col md:flex-row justify-center items-center p-4 md:p-10 bg-opacity-100">
           {/* Left side with shop image */}
-          <div className="w-full md:w-1/2 p-4 flex justify-center items-center">
+          <div className="w-full md:w-2/5 p-4 flex justify-center items-center">
             <img
               src={img6}
               alt="Shop"
@@ -47,7 +35,7 @@ const ContactPage = () => {
           {/* Right side with Google Maps and contact info */}
           <div className="w-full md:w-1/2 p-4 flex flex-col space-y-4 justify-center items-center">
             {/* Google Maps */}
-            <div className="w-full h-64 md:h-96">
+            <div className="w-full h-64 md:h-80">
               <iframe
                 className="w-full h-full rounded-lg shadow-md"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.068498041622!2d-122.41941508468162!3d37.774929279759746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c0c9e4bfb%3A0x9c4e4d2b5e8dd2f4!2sShop%20Location!5e0!3m2!1sen!2sus!4v1615403701208!5m2!1sen!2sus"
@@ -59,17 +47,17 @@ const ContactPage = () => {
 
             {/* Contact Info */}
             <div className="w-full p-4 text-black flex flex-col flex-wrap">
-              <p className="text-black md:text-xl md:w-2/4 text-sm font-merriweather">
+              <p className="text-black lg:text-xl lg:w-3/4 text-sm font-merriweather">
                 329/2, near SEZ IT Park, Saravanampatti, Coimbatore, Tamil Nadu
                 641035
               </p>
               <p className="text-black font-merriweather pt-5 text-sm md:text-lg">
                 <strong>PHONE</strong>
-                <div className="pt-3 font-merriweather md:text-xl">(+91)95148 11539</div>
+                <div className="pt-3 font-merriweather text-sm lg:text-xl">(+91)95148 11539</div>
               </p>
               <p className="text-black font-merriweather pt-5 md:text-xl">
                 <strong>Email</strong>
-                <div className="pt-3 font-merriweather text-sm md:text-lg">
+                <div className="pt-3 font-merriweather text-sm lg:text-lg">
                 studiomc2cbe@gmail.com</div>
               </p>
             </div>
