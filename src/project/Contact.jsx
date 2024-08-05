@@ -19,7 +19,7 @@ const ContactPage = () => {
         </div>
       </div>
 
-      <div className="relative w-full h-auto min-h-screen overflow-hidden">
+      <div className="relative w-full h-auto overflow-hidden">
 
         {/* Overlay with content */}
         <div className="relative w-full h-full flex flex-col md:flex-row justify-center items-center p-4 md:p-10 bg-opacity-100">
@@ -46,7 +46,7 @@ const ContactPage = () => {
             </div>
 
             {/* Contact Info */}
-            <div className="w-full p-4 text-black flex flex-col space-y-4">
+            <div className="w-full text-black flex flex-col space-y-4">
               <p className="text-black text-sm sm:text-base lg:text-lg font-merriweather">
                 329/2, near SEZ IT Park, Saravanampatti, Coimbatore, Tamil Nadu
                 641035
