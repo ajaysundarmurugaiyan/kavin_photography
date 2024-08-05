@@ -8,7 +8,7 @@ const Home = () => {
         <h1 className="text-black text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-arial leading-tight px-4">
           READY TO SMILE
         </h1>
-        <p className="text-black text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl px-4 md:px-10 lg:px-20 mt-4 md:mt-8 lg:mt-12">
+        <p className="text-black text-justify text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl px-4 md:px-10 lg:px-20 mt-4 md:mt-8 lg:mt-12">
           The photography business isn’t just about picking up a camera and
           taking stunning photos. It’s hard work that also involves planning
           strategies that will help you take your business to the next level.

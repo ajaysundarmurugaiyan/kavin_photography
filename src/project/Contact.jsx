@@ -6,11 +6,11 @@ const ContactPage = () => {
     <Fragment>
       <div className="pt-5">
         <div className="relative p-4 sm:p-10">
-          {/* divider */}
+          {/* Divider */}
           <div className="absolute inset-0 flex items-center">
             <div className="border border-slate-200 w-10/12 sm:w-9/12 mx-auto"></div>
           </div>
-          {/* text */}
+          {/* Text */}
           <div className="flex justify-center items-center relative">
             <div className="font-display text-lg sm:text-3xl text-slate-500 bg-white px-4 sm:px-6 py-2 sm:py-4">
               Contact
@@ -19,7 +19,7 @@ const ContactPage = () => {
         </div>
       </div>
 
-      <div className="relative w-full h-screen overflow-hidden">
+      <div className="relative w-full h-auto min-h-screen overflow-hidden">
 
         {/* Overlay with content */}
         <div className="relative w-full h-full flex flex-col md:flex-row justify-center items-center p-4 md:p-10 bg-opacity-100">
@@ -28,14 +28,14 @@ const ContactPage = () => {
             <img
               src={img6}
               alt="Shop"
-              className="w-full h-full object-cover rounded-lg shadow-md"
+              className="w-full h-auto object-cover rounded-lg shadow-md"
             />
           </div>
 
           {/* Right side with Google Maps and contact info */}
-          <div className="w-full md:w-1/2 p-4 flex flex-col space-y-4 justify-center items-center">
+          <div className="w-full md:w-3/5 p-4 flex flex-col space-y-4 justify-center items-center">
             {/* Google Maps */}
-            <div className="w-full h-64 md:h-80">
+            <div className="w-full h-64 md:h-80 mb-4">
               <iframe
                 className="w-full h-full rounded-lg shadow-md"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.068498041622!2d-122.41941508468162!3d37.774929279759746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c0c9e4bfb%3A0x9c4e4d2b5e8dd2f4!2sShop%20Location!5e0!3m2!1sen!2sus!4v1615403701208!5m2!1sen!2sus"
@@ -46,19 +46,18 @@ const ContactPage = () => {
             </div>
 
             {/* Contact Info */}
-            <div className="w-full p-4 text-black flex flex-col flex-wrap">
-              <p className="text-black lg:text-xl lg:w-3/4 text-sm font-merriweather">
+            <div className="w-full p-4 text-black flex flex-col space-y-4">
+              <p className="text-black text-sm sm:text-base lg:text-lg font-merriweather">
                 329/2, near SEZ IT Park, Saravanampatti, Coimbatore, Tamil Nadu
                 641035
               </p>
-              <p className="text-black font-merriweather pt-5 text-sm md:text-lg">
+              <p className="text-black font-merriweather text-sm sm:text-base lg:text-lg">
                 <strong>PHONE</strong>
-                <div className="pt-3 font-merriweather text-sm lg:text-xl">(+91)95148 11539</div>
+                <div className="pt-2 text-sm sm:text-base lg:text-lg">(+91) 95148 11539</div>
               </p>
-              <p className="text-black font-merriweather pt-5 md:text-xl">
+              <p className="text-black font-merriweather text-sm sm:text-base lg:text-lg">
                 <strong>Email</strong>
-                <div className="pt-3 font-merriweather text-sm lg:text-lg">
-                studiomc2cbe@gmail.com</div>
+                <div className="pt-2 text-sm sm:text-base lg:text-lg">studiomc2cbe@gmail.com</div>
               </p>
             </div>
           </div>

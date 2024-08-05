@@ -15,5 +15,5 @@
 }
 
 .btnstyle{
-    @apply border-2 rounded-3xl hover:bg-orange-500 font-merriweather hover:text-white text-gray-500 duration-500
+    @apply border-2 rounded-3xl hover:bg-orange-500 font-merriweather hover:text-white duration-500
 }

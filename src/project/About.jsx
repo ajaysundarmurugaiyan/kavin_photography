@@ -21,7 +21,7 @@ const About = () => {
       </div>
       <div className="flex lg:flex-row flex-col-reverse justify-center items-center lg:justify-evenly text-white text-xs md:text-lg font-merriweather p-5">
         <div>
-            <div className="flex text-center md:text-lg sm:text-xs text-black p-5 max-w-2xl">
+            <div className="flex text-justify md:text-lg sm:text-xs text-black p-5 max-w-2xl">
               I am Kavin Bharadhi, the owner of STUDIO MC2 based in Coimbatore.
               My team and I have been working since 2019 and have covered 80
               weddings till now. Photographs take you down the world of fond
